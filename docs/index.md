@@ -3,9 +3,12 @@
 My digital laboratory for mastering algorithms and data structures through LeetCode.
 
 
-## Project layout
+## Table of Contents
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Section 1: getting-started](./getting-started.md)
+    * [Subsection 1.1: User Guide](./getting-started.md)
+    * [Subsection 1.2: License](./LICENSE.md)
+  
+* [Section 2: Leet code](./tutorials/index.md)
+    * [Subsection 2.1: Hash Map](./tutorials/hashtable/index.md)
+    <!-- * [Subsection 2.2: Two Pointer](#subsection-22-two-pointer) -->

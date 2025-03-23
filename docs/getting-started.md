@@ -5,6 +5,7 @@ Welcome to LeetCodeAlchemy! This repository documents my journey through LeetCod
 ## What You'll Find Here
 
 * **Topic-Wise Organization:** Problems are grouped by relevant data structures and algorithms, facilitating focused learning.
+   * [Hash Map](./tutorials/hashtable/index.md)
 * **Solutions:** Well-commented code solutions for various LeetCode problems.
 * **Explanations:** Clear and concise explanations of the algorithms and data structures used.
 * **Time and Space Complexity Analysis:** A breakdown of the efficiency of each solution.
@@ -14,5 +15,5 @@ Welcome to LeetCodeAlchemy! This repository documents my journey through LeetCod
 
 To understand and run the code in this repository, you'll need:
 
-* **A programming language environment:** for this we will use C++ as primary programming language.
-* **Basic knowledge of data structures and algorithms:** (e.g., arrays, linked lists, hast,trees, graphs, sorting, searching).
+* **A programming language environment:** for this we will use C/C++ as primary programming language.
+* **Basic knowledge of data structures and algorithms:** (e.g. arrays, linked lists, hast,trees, graphs, sorting, searching).
