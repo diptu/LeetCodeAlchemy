@@ -11,5 +11,5 @@ My digital laboratory for mastering algorithms and data structures through LeetC
   
 * [Section 2: Leet code](./tutorials/index.md)
     * [Subsection 2.1: Hash Map](./tutorials/hashtable/index.md)
-    * [Subsection 2.1: Array](./tutorials/array/index.md)
+    * [Subsection 2.2: Array](./tutorials/array/index.md)
     <!-- * [Subsection 2.2: Two Pointer](#subsection-22-two-pointer) -->
