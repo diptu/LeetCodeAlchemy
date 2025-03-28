@@ -41,3 +41,5 @@ nav:
   - Tutorials:
       - Topics : tutorials/index.md
       - Hash Table: tutorials/hashtable/index.md
+      - Array: tutorials/array/index.md
+
