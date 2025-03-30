@@ -4,6 +4,7 @@
 - [12. Integer to Roman](./12.md)`easy`
 - [13. Roman to Integer](./13.md) `easy`
 - [49. Group Anagrams](./49.md)`Medium`
+- [128. Longest Consecutive Sequence](./128.md)`Medium`
 - [202. Happy Number](./202.md)`easy`
 - [205. Isomorphic Strings](./205.md)`easy`
 - [217. Contains Duplicate](./217.md)`easy`
