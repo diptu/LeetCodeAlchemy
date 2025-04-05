@@ -42,4 +42,6 @@ nav:
       - Topics : tutorials/index.md
       - Hash Table: tutorials/hashtable/index.md
       - Array: tutorials/array/index.md
+      - Two Pointer: tutorials/two-pointer/index.md
+
 
