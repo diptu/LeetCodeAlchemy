@@ -6,7 +6,7 @@ This repository is organized into directories based on common data structures an
     * Problems involving the manipulation, searching, and sorting of arrays. These problems often focus on efficient traversal and modification of array elements.
 * **Two Pointers:**
     * Problems mainly involves searching arrays. These problems often focus on efficient traversal and modification of array elements.
-* **Linked Lists:**
+* [**Linked Lists:**](./LinkedList/index.md)
     * Problems related to linked list data structures, including operations like insertion, deletion, reversal, and cycle detection.
 * **Trees:**
     * Problems involving tree-based data structures, such as binary trees, n-ary trees, and binary search trees. These problems often involve tree traversal, searching, and manipulation.

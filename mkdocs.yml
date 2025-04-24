@@ -32,6 +32,10 @@ theme:
     - content.code.annotate
     - content.code.copy
 
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 # Page tree
 nav:
   - Home: index.md
