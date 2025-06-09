@@ -18,7 +18,7 @@ line-length = 88
 target-version = "py311"
 fix = true
 lint.select = ["E", "F", "W", "I", "B", "UP"]  # Example: basic, isort, bugbear, upgrade checks
-ignore = []  # Add any codes you want to ignore
+lint.ignore = []  # Add any codes you want to ignore
 
 [tool.black]
 line-length = 88
@@ -40,5 +40,6 @@ max-line-length = 88
 disable = [
     "too-few-public-methods",
     "missing-module-docstring",
-    "redefined-outer-name"
+    "redefined-outer-name",
+    "invalid-name",
 ]

@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -13,7 +12,7 @@ class Solution:
     """
 
     @staticmethod
-    def contains_duplicate(nums: List[int]) -> bool:
+    def contains_duplicate(nums: list[int]) -> bool:
         """
         Check if the input list contains any duplicates.
 
