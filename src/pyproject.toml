@@ -1,0 +1,44 @@
+[project]
+name = "leetcodealchemy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "black>=25.1.0",
+    "flake8>=7.2.0",
+    "isort>=6.0.1",
+    "pylint>=3.3.7",
+    "pytest>=8.4.0",
+    "ruff==0.11.13",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+fix = true
+lint.select = ["E", "F", "W", "I", "B", "UP"]  # Example: basic, isort, bugbear, upgrade checks
+ignore = []  # Add any codes you want to ignore
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[tool.pylint]
+max-line-length = 88
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+    "too-few-public-methods",
+    "missing-module-docstring",
+    "redefined-outer-name"
+]
