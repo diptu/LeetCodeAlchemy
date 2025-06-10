@@ -1,5 +1,3 @@
-
-
 class Solution:
     """
     Solution class to check if a list contains any duplicates.
