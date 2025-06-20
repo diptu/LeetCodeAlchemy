@@ -12,12 +12,23 @@ class Solution1:
 
 class Solution2:
     def isPalindrome(self, x: int) -> bool:
-        x = str(x)
+        # Find the divisor to extract the leading digit
+        div = 1
+        while x // div >= 10:
+            div *= 10
 
-        if x == x[::-1]:
-            return True
-        else:
-            return False
+        while x != 0:
+            left = x // div  # Leading digit
+            right = x % 10  # Trailing digit
+
+            if left != right:
+                return False
+
+            # Remove leading and trailing digits
+            x = (x % div) // 10
+            div = div // 100  # Because we removed two digits
+
+        return True
 
 
 def benchmark():
