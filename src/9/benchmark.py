@@ -2,12 +2,25 @@ import timeit
 
 
 class Solution1:
-    def isPalindrome(self, x: int) -> bool:
-        x = str(x)
-        if x == x[::-1]:
-            return True
-        else:
-            return False
+   
+def productExceptSelf(nums: List[int]) -> List[int]:
+    length = len(nums)
+    result = [1] * length
+
+    # Left pass: store prefix products directly in result
+    prefix = 1
+    for i in range(length):
+        result[i] = prefix
+        prefix *= nums[i]
+
+    # Right pass: multiply with postfix products
+    postfix = 1
+    for i in range(length - 1, -1, -1):
+        result[i] *= postfix
+        postfix *= nums[i]
+
+    return result
+
 
 
 class Solution2:
