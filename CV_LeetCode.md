@@ -4,10 +4,10 @@
 ### 🔹 Week 1: Matrix & Image Basics
 - [X] [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
-- [ ] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+- [X] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [ ] [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
 - [ ] [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
-- [ ] [661. Image Smoother](https://leetcode.com/problems/image-smoother/)
+- [X] [661. Image Smoother](https://leetcode.com/problems/image-smoother/)
 - [ ] [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/)
 
 ### 🔹 Week 2: Region Detection & Flood Fill
