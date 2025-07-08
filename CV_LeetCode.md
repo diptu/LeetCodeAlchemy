@@ -2,7 +2,7 @@
 # ✅ 30-Day Computer Vision LeetCode Challenge (Month 1)
 
 ### 🔹 Week 1: Matrix & Image Basics
-- [ ] [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
+- [X] [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [ ] [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [ ] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 - [ ] [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
