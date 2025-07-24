@@ -5,8 +5,8 @@
 - [X] [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 - [X] [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 - [X] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
-- [ ] [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
-- [ ] [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
+- [x] [867. Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
+- [x] [1572. Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/)
 - [X] [661. Image Smoother](https://leetcode.com/problems/image-smoother/)
 - [ ] [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/)
 
@@ -20,7 +20,7 @@
 - [ ] [1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/)
 
 ### 🔹 Week 3: Sliding Window & Patch Analysis
-- [ ] [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+- [x] [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 - [ ] [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
 - [ ] [304. Range Sum Query 2D](https://leetcode.com/problems/range-sum-query-2d-immutable/)
 - [ ] [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)

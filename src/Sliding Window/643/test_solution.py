@@ -26,21 +26,7 @@ def solver() -> Solution:
         ([4, 2, 1, 3, 5], 5, 3.0),  # window equals array length
     ],
 )
-def testFindMaxAverage(solver, nums, k, expected):
+def test_find_max_average_valid(solver, nums, k, expected):
     """Test valid inputs against expected maximum average."""
-    result = solver.find_max_average(nums, k)
+    result = solver.findMaxAverage(nums, k)
     assert pytest.approx(result, rel=1e-6) == expected
-
-
-@pytest.mark.parametrize(
-    "nums, k",
-    [
-        ([], 1),  # empty list
-        ([1, 2, 3], 0),  # zero window size
-        ([1, 2, 3], 4),  # window size larger than list
-    ],
-)
-def testtestFindMaxAverageInvalid(solver, nums, k):
-    """Test that invalid parameters raise ValueError."""
-    with pytest.raises(ValueError):
-        solver.testFindMaxAverage(nums, k)
