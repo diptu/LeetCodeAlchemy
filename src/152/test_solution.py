@@ -11,7 +11,7 @@ Covers:
 """
 
 import pytest
-from solution import Solution  # Replace with actual filename
+from solution import Solution
 
 
 @pytest.fixture
