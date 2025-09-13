@@ -16,13 +16,12 @@ Optimizations:
 
 """
 
-from typing import List
 
 
 class Solution:
     """Class implementing optimized merge sort using recursion."""
 
-    def sortArray(self, nums: List[int]) -> List[int]:
+    def sortArray(self, nums: list[int]) -> list[int]:
         """Sorts an array using merge sort (optimized).
 
         Parameters
@@ -44,12 +43,12 @@ class Solution:
         if len(nums) <= 1:
             return nums
 
-        buffer: List[int] = [0] * len(nums)
+        buffer: list[int] = [0] * len(nums)
         self._merge_sort(nums, buffer, 0, len(nums) - 1)
         return nums
 
     def _merge_sort(
-        self, nums: List[int], buffer: List[int], left: int, right: int
+        self, nums: list[int], buffer: list[int], left: int, right: int
     ) -> None:
         """Recursive helper function for merge sort.
 
@@ -74,7 +73,7 @@ class Solution:
         self._merge(nums, buffer, left, mid, right)
 
     def _merge(
-        self, nums: List[int], buffer: List[int], left: int, mid: int, right: int
+        self, nums: list[int], buffer: list[int], left: int, mid: int, right: int
     ) -> None:
         """Merges two sorted subarrays in place.
 

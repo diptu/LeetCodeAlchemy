@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -7,7 +6,7 @@ class Solution:
     in a matrix if any element in that row or column is zero.
     """
 
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         """
         Modify the input matrix in-place such that if an element is 0,
         its entire row and column are set to 0.

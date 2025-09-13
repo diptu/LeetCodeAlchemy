@@ -4,7 +4,6 @@ This module provides functionality to compute the maximum average of any
 contiguous subarray of a specified length within a list of numbers.
 """
 
-from typing import List
 
 
 class Solution:
@@ -16,7 +15,7 @@ class Solution:
         Compute the maximum average of any contiguous subarray of length k.
     """
 
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+    def findMaxAverage(self, nums: list[int], k: int) -> float:
         """Calculate the maximum average of any contiguous subarray of length k.
 
         Parameters

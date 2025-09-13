@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -11,7 +10,7 @@ class Solution:
         Merge nums2 into nums1 as one sorted array in-place.
     """
 
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+    def merge(self, nums1: list[int], m: int, nums2: list[int], n: int) -> None:
         """
         Merge nums2 into nums1 in-place as a single sorted array.
 

@@ -13,7 +13,6 @@ O(1).
 """
 
 import pytest
-
 from solution import Solution
 
 

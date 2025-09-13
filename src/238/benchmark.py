@@ -2,12 +2,11 @@
 Benchmark different implementations.
 """
 
-import timeit
 import random
-from typing import List
+import timeit
 
 
-def product_except_self_original(nums: List[int]) -> List[int]:
+def product_except_self_original(nums: list[int]) -> list[int]:
     """
     Compute the product of all elements except self using
     left and right prefix arrays.
@@ -42,7 +41,7 @@ def product_except_self_original(nums: List[int]) -> List[int]:
     return result
 
 
-def product_except_self_optimized(nums: List[int]) -> List[int]:
+def product_except_self_optimized(nums: list[int]) -> list[int]:
     """
     Optimized version that computes product except self using only one result array.
 

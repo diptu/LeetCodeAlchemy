@@ -3,7 +3,6 @@ Module that contains a Solution class to compute
 product of array elements except self.
 """
 
-from typing import List
 
 
 class Solution:
@@ -12,7 +11,7 @@ class Solution:
     in an array except the element at each index.
     """
 
-    def product_except_self(self, nums: List[int]) -> List[int]:
+    def product_except_self(self, nums: list[int]) -> list[int]:
         """
         Compute the product of all elements except self using prefix products.
 

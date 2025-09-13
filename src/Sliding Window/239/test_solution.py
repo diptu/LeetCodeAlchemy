@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 pytest module for testing Solution.find_max_average.
 

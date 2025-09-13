@@ -1,13 +1,12 @@
 """Module for solving sliding window maximum using a monotonic deque."""
 
 from collections import deque
-from typing import List
 
 
 class Solution:
     """A class containing array-related sliding window solutions."""
 
-    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+    def maxSlidingWindow(self, nums: list[int], k: int) -> list[int]:
         """
         Return the maximum value in each sliding window of size `k`.
 

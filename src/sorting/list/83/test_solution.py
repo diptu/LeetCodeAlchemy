@@ -1,5 +1,5 @@
 import pytest
-from solution import ListNode, Solution, traverse_list
+from solution import ListNode, Solution
 
 
 def list_to_linked(values: list[int]) -> ListNode | None:

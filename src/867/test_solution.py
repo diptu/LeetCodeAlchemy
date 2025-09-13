@@ -1,5 +1,5 @@
+
 import pytest
-from typing import List
 from solution import Solution
 
 
@@ -14,7 +14,7 @@ from solution import Solution
         ([[1], [2], [3]], [[1, 2, 3]]),
     ],
 )
-def test_transpose(matrix: List[List[int]], expected: List[List[int]]) -> None:
+def test_transpose(matrix: list[list[int]], expected: list[list[int]]) -> None:
     """
     Test the transpose method of the Solution class.
 

@@ -1,5 +1,5 @@
+
 import pytest
-from typing import List
 from solution import Solution
 
 
@@ -17,7 +17,7 @@ from solution import Solution
         ),
     ],
 )
-def test_three_sum(nums: List[int], expected: List[List[int]]) -> None:
+def test_three_sum(nums: list[int], expected: list[list[int]]) -> None:
     """
     Test the three_sum method of the Solution class.
 

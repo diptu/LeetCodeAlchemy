@@ -12,11 +12,10 @@ Example:
 | (1, 1, 0, 0, 0, 0, ..., 0, 1, 0, ..., 0)       | ['bat']                 |
 """
 
-from typing import List, Tuple
 from collections import defaultdict
 
 
-def frequency_key(word: str) -> Tuple[int, ...]:
+def frequency_key(word: str) -> tuple[int, ...]:
     """
     Generate a frequency tuple key representing counts of letters 'a' to 'z'.
 
@@ -58,7 +57,7 @@ class Solution:
     O(N * K) for storing the input strings in groups and the frequency tuple keys.
     """
 
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         """
         Group words that are anagrams of each other.
 

@@ -1,6 +1,5 @@
 """Quicksort algorithm implementation with recursion."""
 
-from typing import List
 
 
 class Solution:
@@ -8,7 +7,7 @@ class Solution:
     A class implementing the Quicksort algorithm.
     """
 
-    def _partition(self, nums: List[int], start: int, end: int) -> int:
+    def _partition(self, nums: list[int], start: int, end: int) -> int:
         """
         Partition the array around a pivot element.
 
@@ -41,7 +40,7 @@ class Solution:
         nums[i + 1], nums[end] = nums[end], nums[i + 1]
         return i + 1
 
-    def _quick_sort(self, nums: List[int], start: int, end: int) -> None:
+    def _quick_sort(self, nums: list[int], start: int, end: int) -> None:
         """
         Perform recursive Quicksort on a subarray.
 
@@ -68,7 +67,7 @@ class Solution:
             self._quick_sort(nums, start, partition_idx - 1)
             self._quick_sort(nums, partition_idx + 1, end)
 
-    def sort_colors(self, nums: List[int]) -> List[int]:
+    def sort_colors(self, nums: list[int]) -> list[int]:
         """
         Sort a list of integers using the Quicksort algorithm.
 

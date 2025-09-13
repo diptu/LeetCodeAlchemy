@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -20,7 +19,7 @@ class Solution:
     O(m * n) for the prefix sum matrix.
     """
 
-    def matrixBlockSum(self, mat: List[List[int]], k: int) -> List[List[int]]:
+    def matrixBlockSum(self, mat: list[list[int]], k: int) -> list[list[int]]:
         """
         Compute the k-radius block sum for each element in the matrix.
 

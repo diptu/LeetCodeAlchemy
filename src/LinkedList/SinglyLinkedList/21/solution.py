@@ -6,7 +6,7 @@ merge_two_lists method, plus small utilities for building and printing lists.
 
 from __future__ import annotations
 
-from typing import Iterator, Optional
+from collections.abc import Iterator
 
 
 class ListNode:
@@ -24,19 +24,19 @@ class ListNode:
     Implements ``__iter__`` so a list can be converted via ``list(head)``.
     """
 
-    def __init__(self, val: int = 0, next: Optional["ListNode"] = None) -> None:
+    def __init__(self, val: int = 0, next: ListNode | None = None) -> None:
         self.val: int = val
-        self.next: Optional["ListNode"] = next
+        self.next: ListNode | None = next
 
     def __iter__(self) -> Iterator[int]:
         """Iterate values from this node onward."""
-        current: Optional["ListNode"] = self
+        current: ListNode | None = self
         while current is not None:
             yield current.val
             current = current.next
 
 
-def traverse_list(head: Optional[ListNode]) -> None:
+def traverse_list(head: ListNode | None) -> None:
     """Print the list values from head to tail.
 
     Parameters
@@ -63,8 +63,8 @@ class Solution:
 
     @staticmethod
     def merge_two_lists(
-        list1: Optional[ListNode], list2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+        list1: ListNode | None, list2: ListNode | None
+    ) -> ListNode | None:
         """Merge two sorted (non-decreasing) singly linked lists.
 
         Parameters

@@ -1,8 +1,7 @@
-from typing import List
 
 
 class Solution:
-    def imageSmoother(self, img: List[List[int]]) -> List[List[int]]:
+    def imageSmoother(self, img: list[list[int]]) -> list[list[int]]:
         """
         Smooths an image represented as a 2D grid by averaging each pixel
         with its neighboring pixels in a 3x3 window.

@@ -1,10 +1,9 @@
-import timeit
 import copy
-from typing import List
+import timeit
 
 
 class NaiveSolution:
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         """
         Naive approach using extra space to track zero positions.
         """
@@ -24,7 +23,7 @@ class NaiveSolution:
 
 
 class OptimizedSolution:
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         """
         Optimized in-place approach using O(1) space.
         """
@@ -52,7 +51,7 @@ class OptimizedSolution:
                 matrix[i][0] = 0
 
 
-def generate_matrix(rows: int, cols: int, zero_rate: float = 0.1) -> List[List[int]]:
+def generate_matrix(rows: int, cols: int, zero_rate: float = 0.1) -> list[list[int]]:
     """
     Generate a matrix of the given size with random zeros.
     """

@@ -1,6 +1,6 @@
 """Pytest for Solution.findMin function."""
 
-from typing import List
+
 import pytest
 from solution import Solution  # Assuming your main code is in solution.py
 
@@ -16,7 +16,7 @@ from solution import Solution  # Assuming your main code is in solution.py
         ([5, 6, 1, 2, 3, 4], 1),  # Rotated with multiple elements
     ],
 )
-def test_findMin(nums: List[int], expected: int) -> None:
+def test_findMin(nums: list[int], expected: int) -> None:
     """Test findMin with various rotated and non-rotated arrays.
 
     Args:

@@ -9,13 +9,12 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 """
 
-from typing import List
 
 
 class Solution:
     """Solution class to find minimum in a rotated sorted array."""
 
-    def findMin(self, nums: List[int]) -> int:
+    def findMin(self, nums: list[int]) -> int:
         """Return the minimum element in a rotated sorted array.
 
         Args:

@@ -1,5 +1,5 @@
+
 import pytest
-from typing import List
 from solution import Solution  # assumes the class is in solution.py
 
 
@@ -15,7 +15,7 @@ from solution import Solution  # assumes the class is in solution.py
         ([[0], [1]], [[0], [0]]),
     ],
 )
-def test_set_zeroes(matrix: List[List[int]], expected: List[List[int]]) -> None:
+def test_set_zeroes(matrix: list[list[int]], expected: list[list[int]]) -> None:
     """
     Test the in-place matrix zeroing algorithm for various configurations.
 

@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -6,7 +5,7 @@ class Solution:
     Class to solve the matrix zeroing problem in-place using O(1) space.
     """
 
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         """
         Modify the input matrix in-place such that if an element is 0,
         its entire row and column are set to 0. Optimized to use no

@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -13,7 +12,7 @@ class Solution:
         a sorted list of integers.
     """
 
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert(self, nums: list[int], target: int) -> int:
         """
         Locate the index of `target` in a sorted list of integers. If the
         target is not found, return the index where it should be inserted

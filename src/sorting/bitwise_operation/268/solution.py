@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -11,7 +10,7 @@ class Solution:
         Finds the missing number in a sequence of integers from 0 to n.
     """
 
-    def missingNumber(self, nums: List[int]) -> int:
+    def missingNumber(self, nums: list[int]) -> int:
         """
         Find the single missing number in a sequence containing integers
         from 0 to n with one element missing, using XOR.

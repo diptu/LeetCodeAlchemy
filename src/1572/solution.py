@@ -1,12 +1,11 @@
 """Module to calculate the sum of diagonals in a square matrix."""
 
-from typing import List
 
 
 class Solution:
     """A class containing methods for matrix-based computations."""
 
-    def diagonalSum(self, mat: List[List[int]]) -> int:
+    def diagonalSum(self, mat: list[list[int]]) -> int:
         """
         Calculate the sum of the primary and secondary diagonals of a square matrix.
 

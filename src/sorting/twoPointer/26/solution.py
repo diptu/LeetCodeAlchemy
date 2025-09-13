@@ -1,4 +1,3 @@
-from typing import List
 
 
 class Solution:
@@ -7,7 +6,7 @@ class Solution:
     a sorted list of integers in-place.
     """
 
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums: list[int]) -> int:
         """
         Remove duplicates from a sorted array in-place. The
         function returns the number of unique elements. The

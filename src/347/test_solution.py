@@ -1,6 +1,5 @@
 """Test module for Solution class implementing Top K Frequent Elements."""
 
-from typing import List
 
 import pytest
 from solution import Solution
@@ -30,9 +29,9 @@ def test_basic_case(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [1, 1, 2, 2, 2, 3]
+    nums: list[int] = [1, 1, 2, 2, 2, 3]
     k: int = 2
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert set(result) == {1, 2}
 
 
@@ -47,9 +46,9 @@ def test_all_unique(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [1, 2, 3, 4]
+    nums: list[int] = [1, 2, 3, 4]
     k: int = 2
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert len(result) == 2
     assert all(num in nums for num in result)
 
@@ -65,9 +64,9 @@ def test_all_same(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [5, 5, 5, 5]
+    nums: list[int] = [5, 5, 5, 5]
     k: int = 1
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert result == [5]
 
 
@@ -82,9 +81,9 @@ def test_more_k_than_unique_elements(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [1, 1, 2]
+    nums: list[int] = [1, 1, 2]
     k: int = 5
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert set(result) == {1, 2}
 
 
@@ -99,9 +98,9 @@ def test_empty_input(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = []
+    nums: list[int] = []
     k: int = 1
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert result == []
 
 
@@ -116,9 +115,9 @@ def test_negative_numbers(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [-1, -1, -2, -2, -2, -3]
+    nums: list[int] = [-1, -1, -2, -2, -2, -3]
     k: int = 2
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert set(result) == {-1, -2}
 
 
@@ -133,7 +132,7 @@ def test_large_k_equal_to_n(solution: Solution) -> None:
     solution : Solution
         An instance of the Solution class.
     """
-    nums: List[int] = [1, 2, 3, 4, 5]
+    nums: list[int] = [1, 2, 3, 4, 5]
     k: int = 5
-    result: List[int] = solution.topKFrequent(nums, k)
+    result: list[int] = solution.topKFrequent(nums, k)
     assert set(result) == set(nums)

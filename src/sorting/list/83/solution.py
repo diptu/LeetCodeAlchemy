@@ -15,10 +15,10 @@ class ListNode:
 
     def __init__(self, val: int = 0, next: Optional["ListNode"] = None) -> None:
         self.val: int = val
-        self.next: Optional["ListNode"] = next
+        self.next: ListNode | None = next
 
 
-def traverse_list(head: Optional[ListNode]) -> None:
+def traverse_list(head: ListNode | None) -> None:
     """
     Print the values of a linked list from head to tail.
 
@@ -47,7 +47,7 @@ class Solution:
     sorted linked list.
     """
 
-    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def deleteDuplicates(self, head: ListNode | None) -> ListNode | None:
         """
         Remove duplicates from a sorted linked list in-place.
 

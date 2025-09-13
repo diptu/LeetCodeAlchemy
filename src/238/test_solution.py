@@ -2,7 +2,6 @@
 Pytest module to test the 'product_except_self' method from the Solution class.
 """
 
-from typing import List
 
 import pytest
 from solution import Solution
@@ -33,7 +32,7 @@ def solution() -> Solution:
     ],
 )
 def test_product_except_self(
-    solution: Solution, nums: List[int], expected: List[int]
+    solution: Solution, nums: list[int], expected: list[int]
 ) -> None:
     """
     Test product_except_self with various inputs.

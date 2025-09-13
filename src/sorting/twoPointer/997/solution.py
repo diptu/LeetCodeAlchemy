@@ -1,10 +1,9 @@
-from typing import List
 
 
 class Solution:
     """Class to solve array-related problems."""
 
-    def sortedSquares(self, nums: List[int]) -> List[int]:
+    def sortedSquares(self, nums: list[int]) -> list[int]:
         """
         Return the squares of a sorted array in non-decreasing order.
 
@@ -39,7 +38,7 @@ class Solution:
         n: int = len(nums)
         left: int = 0
         right: int = n - 1
-        result: List[int] = [0] * n
+        result: list[int] = [0] * n
 
         for i in range(n - 1, -1, -1):
             if abs(nums[left]) > abs(nums[right]):
@@ -54,5 +53,5 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    nums: List[int] = [-4, -1, 0, 3, 10]
+    nums: list[int] = [-4, -1, 0, 3, 10]
     print(solution.sortedSquares(nums))  # [0, 1, 9, 16, 100]

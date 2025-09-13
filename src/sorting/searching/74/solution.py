@@ -1,8 +1,7 @@
-from typing import List
 
 
 class Solution:
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+    def searchMatrix(self, matrix: list[list[int]], target: int) -> bool:
         """
         Search for a target value in a 2D matrix using binary search.
 

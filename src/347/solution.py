@@ -4,15 +4,14 @@ This module defines a Solution class with a method that finds the top
 K most frequent elements in a list using a min-heap for efficient retrieval.
 """
 
-from collections import Counter
-from typing import List
 import heapq
+from collections import Counter
 
 
 class Solution:
     """Class for solving the Top K Frequent Elements problem."""
 
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         """
         Return the top K most frequent elements from the given list.
 
@@ -36,7 +35,7 @@ class Solution:
         [2, 1]
         """
         freq: Counter[int] = Counter(nums)
-        min_heap: List[tuple[int, int]] = []
+        min_heap: list[tuple[int, int]] = []
 
         for num, count in freq.items():
             heapq.heappush(min_heap, (count, num))

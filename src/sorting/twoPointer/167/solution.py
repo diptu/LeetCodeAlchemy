@@ -9,13 +9,12 @@ Key idea:
     - Hash map works on both sorted and unsorted arrays.
 """
 
-from typing import List
 
 
 class Solution:
     """Solution class for Two Sum II problem."""
 
-    def two_sum(self, numbers: List[int], target: int) -> List[int]:
+    def two_sum(self, numbers: list[int], target: int) -> list[int]:
         """Return 1-based indices of two numbers adding up to target.
 
         Args:

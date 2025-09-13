@@ -1,6 +1,6 @@
 """Pytest module for Solution.two_sum implementations."""
 
-from typing import List
+
 import pytest
 from solution import Solution
 
@@ -15,7 +15,7 @@ from solution import Solution
         ([3, 24, 50, 79, 88, 150, 345], 200),  # Large gap
     ],
 )
-def test_two_sum_sorted(numbers: List[int], target: int) -> None:
+def test_two_sum_sorted(numbers: list[int], target: int) -> None:
     """Test two_sum method on sorted arrays (two-pointer solution)."""
     solution = Solution()
     result = solution.two_sum(numbers, target)

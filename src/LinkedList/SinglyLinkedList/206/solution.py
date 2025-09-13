@@ -15,10 +15,10 @@ class ListNode:
 
     def __init__(self, val: int = 0, next: Optional["ListNode"] = None) -> None:
         self.val: int = val
-        self.next: Optional["ListNode"] = next
+        self.next: ListNode | None = next
 
 
-def traverse_list(head: Optional[ListNode]) -> None:
+def traverse_list(head: ListNode | None) -> None:
     """Print the values of a linked list from head to tail.
 
     Parameters
@@ -43,7 +43,7 @@ def traverse_list(head: Optional[ListNode]) -> None:
 class Solution:
     """Algorithms for singly-linked lists."""
 
-    def reverse_list(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverse_list(self, head: ListNode | None) -> ListNode | None:
         """Reverse a singly-linked list in place.
 
         The list is reversed by iteratively redirecting `next` pointers.
@@ -73,8 +73,8 @@ class Solution:
         >>> traverse_list(result)
         3 2 1
         """
-        prev: Optional[ListNode] = None
-        curr: Optional[ListNode] = head
+        prev: ListNode | None = None
+        curr: ListNode | None = head
 
         while curr is not None:
             nxt = curr.next

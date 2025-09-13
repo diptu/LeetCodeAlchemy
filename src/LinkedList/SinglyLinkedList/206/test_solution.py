@@ -1,11 +1,11 @@
 # file: test_reverse_linked_list_inplace.py
-from typing import Iterable, Optional
-import pytest
+from collections.abc import Iterable
 
+import pytest
 from solution import ListNode, Solution
 
 
-def build_list(values: Iterable[int]) -> Optional[ListNode]:
+def build_list(values: Iterable[int]) -> ListNode | None:
     """Build a linked list from a Python iterable of ints."""
     dummy = ListNode()
     tail = dummy
@@ -15,7 +15,7 @@ def build_list(values: Iterable[int]) -> Optional[ListNode]:
     return dummy.next
 
 
-def to_list(head: Optional[ListNode]) -> list[int]:
+def to_list(head: ListNode | None) -> list[int]:
     """Convert a linked list to a Python list of ints."""
     out: list[int] = []
     node = head
