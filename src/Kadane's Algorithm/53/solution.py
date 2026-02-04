@@ -5,7 +5,6 @@ contiguous subarray in a given list of integers.
 """
 
 
-
 class Solution:
     """Solver for the Maximum Subarray problem.
 
