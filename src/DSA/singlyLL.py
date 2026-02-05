@@ -2,7 +2,7 @@ from typing import Optional
 
 
 class Node:
-    """Singly linked list node."""
+    """Node of a singly linked list."""
 
     def __init__(self, val: int, next: Optional["Node"] = None) -> None:
         self.val = val
@@ -15,45 +15,62 @@ class SinglyLinkedList:
     def __init__(self, head: Optional[Node] = None) -> None:
         self.head = head
 
-    def insertAtEnd(self, val: int) -> None:
+    def insert_at_start(self, val: int) -> None:
+        """Insert a node at the beginning of the list."""
+        self.head = Node(val, self.head)
+
+    def insert_at_end(self, val: int) -> None:
         """Insert a node at the end of the list."""
         new_node = Node(val)
 
-        if self.head is None:
+        if not self.head:
             self.head = new_node
             return
 
-        current = self.head
-        while current.next:
-            current = current.next
+        cur = self.head
+        while cur.next:
+            cur = cur.next
+        cur.next = new_node
 
-        current.next = new_node
-
-    def insertAtStart(self, val: int) -> None:
-        """Insert a node at the start of the list."""
-        new_node = Node(val)
-        new_node.next = self.head
-        self.head = new_node
-
-    def insert_after_node(self, target: int, val: int) -> bool:
+    def insert_after(self, target: int, val: int) -> bool:
         """
         Insert a node with value `val` after the first node
         containing `target`.
 
-        Returns True if insertion succeeds, False otherwise.
+        Returns True if inserted, False if target not found.
         """
-        current = self.head
-
-        while current:
-            if current.val == target:
-                new_node = Node(val, current.next)
-                current.next = new_node
+        cur = self.head
+        while cur:
+            if cur.val == target:
+                cur.next = Node(val, cur.next)
                 return True
-            current = current.next
+            cur = cur.next
+        return False
 
-        return False  # target not found
+    def delete(self, target: int) -> bool:
+        """
+        Delete the first node containing `target`.
 
-    def traverse(self):
+        Returns True if deleted, False if target not found.
+        """
+        if not self.head:
+            return False
+
+        if self.head.val == target:
+            self.head = self.head.next
+            return True
+
+        prev, cur = self.head, self.head.next
+        while cur:
+            if cur.val == target:
+                prev.next = cur.next
+                return True
+            prev, cur = cur, cur.next
+
+        return False
+
+    def traverse(self) -> None:
+        """Print the linked list."""
         cur = self.head
         while cur:
             print(cur.val, end=" -> ")
@@ -65,12 +82,11 @@ class SinglyLinkedList:
 # ✅ Example Usage
 # =============================================================================
 if __name__ == "__main__":
-    obj = SinglyLinkedList()
-    obj.insertAtEnd(1)
-    obj.insertAtEnd(2)
-    obj.insertAtEnd(3)
-    obj.insertAtStart(4)
-
-    obj.insert_after_node(2, 99)  # Insert 99 after 2
-
-    obj.traverse()
+    ll = SinglyLinkedList()
+    ll.insert_at_start(1)
+    ll.insert_at_end(2)
+    ll.insert_at_end(3)
+    ll.insert_at_end(4)
+    ll.insert_after(1, 99)
+    ll.delete(4)
+    ll.traverse()
