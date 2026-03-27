@@ -6,29 +6,36 @@ Author: Nazmul Alam Diptu
 
 Problem
 -------
-
+Given an integer `n`, return the number of '1' bits
+(also known as the Hamming weight).
 
 Complexity
 ----------
-
+Time  : O(k), where k = number of set bits
+Space : O(1)
 
 Key Idea
 --------
+Use Brian Kernighan’s Algorithm:
 
+- Repeatedly remove the lowest set bit using:
+      n = n & (n - 1)
+- Each operation removes one '1' bit
+- Count how many times this operation runs
 """
 
 from __future__ import annotations
-from typing import Dict
 
 
 class Solution:
-    def hammingWeight(self, n: int) -> int:
-        count = 0
+    """Count number of set bits in an integer."""
 
-        while n > 0:
-            if n % 2 == 1:
-                count += 1
-            n = n >> 1  # right shift by  1 or divide by 2
+    def hammingWeight(self, n: int) -> int:  # noqa: N802
+        count: int = 0
+
+        while n:
+            n &= n - 1
+            count += 1
 
         return count
 
@@ -39,8 +46,8 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
 
-    assert solution.hammingWeight(11) == 3
-    assert solution.hammingWeight(n=2147483645) == 30
-    assert solution.hammingWeight(n=128) == 1
+    assert solution.hammingWeight(11) == 3  # 1011
+    assert solution.hammingWeight(2147483645) == 30
+    assert solution.hammingWeight(128) == 1  # 10000000
 
     print("✅ All tests passed successfully!")
